@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación de formularios</title>
+<style>
+    .control{
+        width: 99%;
+        font-family:Open Sans, Arial, sans-serif;
+        font: size 14px;
+        font-weight:300;
+        line-height:1.6em;
+        background-color:#fff;
+    }
+    .activo{
+        color:rgb(24,7,31);
+        background-color: rgb(0,255,34);
+    }
+</style>
+</head>
+<body>
+    <h1>Validación de datos antes de enviarlos</h1>
+    <from name="formulario" id="formulario" style="width:30%" onsubmit="return false;"
+    <table style="background:rgb(125,125,125)" border="1px" width="100%">
+        <tr>
+            <td width="30%">
+                <label id="lbldni" for="dni">DNI:</label>
+            </td>
+            <td width="70%">
+                <input class="control" type="number" name="dni" id="dni" placeholder="DNI"><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="nombre">Nombre:</label>
+            </td>
+            <td>
+                <input class="control" type="text" name="nombre" id="nombre" maxlength="50" placeholder="Nombre"><br>
+            </td>
+            <td>
+                <label>Apellido:</label>
+            </td>
+            <td>
+                <input class="control" type="text" name="apellido" id="apellido" maxlength="50" placeholder="Apellido"><br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>E-Mail:</label>
+            </td>
+            <td><input type="email" class="control" name="email" id="email" maxlength="150" placeholder="e-mail"><br>                
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button class="control" id="btnGuardar" width="100%">Guardar</button>
+            </td>
+        </tr>
+        <br/>
+    </table>
+<script src="controlformulario.js"></script>        
+</body>
+</html>
